@@ -3,8 +3,8 @@
 <html lang="en">
 
 <head>
-  <title>jQuery Nivo Slider Demo</title>
-  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <title>Plucky Films</title>
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="demo/style.css" type="text/css" media="screen" />
@@ -14,19 +14,46 @@
   <div id="wrapper">
     <div class="slider-wrapper theme-default">
       <div id="slider" class="nivoSlider">
-         <img src="demo/images/PluckyFilms_1.jpg" data-thumb="demo/images/toystory.jpg" alt="" />
-         <img src="demo/images/PluckyFilms_2.jpg" data-thumb="demo/images/up.jpg"
-            alt="" title="This is an example of a caption" />
-            <img src="demo/images/PluckyFilms_3.jpg" data-thumb="demo/images/walle.jpg" alt="" data-transition="slideInLeft" /> 
-            <img src="demo/images/PluckyFilms_4.jpg" data-thumb="demo/images/nemo.jpg" alt="" title="#htmlcaption" /> </div>
-            <!-- <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div> -->
+        <img src="demo/images/PluckyFilms_1.jpg" data-thumb="demo/images/toystory.jpg" alt="" title="#write" />
+        <img src="demo/images/PluckyFilms_2.jpg" data-thumb="demo/images/up.jpg" alt="" title="#founded" />
+        <img src="demo/images/PluckyFilms_3.jpg" data-thumb="demo/images/walle.jpg" alt="" data-transition="slideInLeft"
+          title="#Plucky" />
+        <img src="demo/images/PluckyFilms_4.jpg" data-thumb="demo/images/nemo.jpg" alt="" title="#info" /> </div>
+
+      <div id="write" class="nivo-html-caption">
+        <h1>Write. Direct. Produce.</h1>
+      </div>
+
+      <div id="founded" class="nivo-html-caption">
+        <p>Founded in 2015, Plucky Films is a New York based film and television production company that creates and
+          develops diverse and original content covering various genres in both the independent and studio space.</p>
+      </div>
+
+      <div id="Plucky" class="nivo-html-caption">
+        <p>
+          Plucky Films brings fresh, new innovative shows to homes and movie theaters across the globe; producing
+          stories that evoke meaningful conversations covering vast topics to encourage thoughtful discussion by
+          audiences worldwide.
+        </p>
+      </div>
+
+      <div id="info" class="nivo-html-caption">
+        <p>
+          Plucky Films
+          450 Lex. Ave #2782
+          New York, NY 10017
+          212-498-9314
+          info@pluckyfilms.com
+        </p>
+      </div>
     </div>
   </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.nivo.slider.js"></script>
   <script type="text/javascript">
     $(window).load(function () {
       $('#slider').nivoSlider();
+      $('#slider').data('nivoslider').stop();
     });
   </script>
 
