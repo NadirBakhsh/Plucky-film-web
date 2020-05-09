@@ -8,6 +8,20 @@
 /*====================*/
 /*=== Reset Styles ===*/
 /*====================*/
+
+@font-face {
+    font-family: Century-Gothic;
+    src: url('../demo/Century-Gothic.ttf');
+}
+@font-face {
+    font-family: CenturyGothicBold;
+    src: url('../demo/CenturyGothicBold.ttf');
+}
+@font-face {
+    font-family: CenturyGothicRegular;
+    src: url('../demo/CenturyGothicRegular.ttf');
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,9 +37,38 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-weight:inherit;
 	font-style:inherit;
 	font-size:100%;
-	font-family:inherit;
+	font-family: CenturyGothicRegular;
 	vertical-align:baseline;
 }
+
+h1.title-wdp{
+	font-size: 54.2pt;
+	font-family: CenturyGothicBold;
+}
+
+p.Founded-text{
+	font-size: 16.49pt;
+	width: 70%;
+	text-align: center;
+}
+p.Plucky-text{
+	font-size: 16.49pt;
+	width: 67%;
+	text-align: center;
+}
+
+p > span {
+	background-color: rgba(131, 113, 98, .8);
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+p.contact-text{
+	font-size: 16.49pt;
+	width: 65%;
+	text-align: center;
+}
+
 body {
 	line-height:1;
 	color:black;
