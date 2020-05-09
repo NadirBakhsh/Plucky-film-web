@@ -55,18 +55,30 @@ p.Plucky-text{
 	font-size: 16.49pt;
 	width: 67%;
 	text-align: center;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 p > span {
 	background-color: rgba(131, 113, 98, .8);
-	padding-left: 1%;
-	padding-right: 1%;
+	margin-top: 5px;
 }
 
 p.contact-text{
 	font-size: 16.49pt;
-	width: 65%;
+	width: 100%;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+p.contact-text span{
+	background: none !important;
 }
 
 body {
@@ -134,4 +146,12 @@ a:hover, a:active {
 /*====================*/
 .clear {
 	clear:both;
+}
+
+.info-container{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
