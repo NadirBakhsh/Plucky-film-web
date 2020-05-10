@@ -633,7 +633,7 @@
         animSpeed: 1000,
         pauseTime: 7000,
         startSlide: 0,
-        directionNav: true,
+        directionNav: false,
         controlNav: false,
         controlNavThumbs: false,
         pauseOnHover: false,
@@ -646,7 +646,7 @@
         slideshowEnd: function(){},
         lastSlide: function(){},
         afterLoad: function(){},
-        directionNav: true,
+        
     };
 
     $.fn._reverse = [].reverse;
