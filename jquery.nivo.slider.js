@@ -590,7 +590,7 @@
         var trace = function(msg){
             if(this.console && typeof console.log !== 'undefined') { console.log(msg); }
         };
-        
+                 
         // Start / Stop
         this.stop = function(){
             if(!$(element).data('nivo:vars').stop){
@@ -652,3 +652,4 @@
     $.fn._reverse = [].reverse;
     
 })(jQuery);
+
