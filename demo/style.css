@@ -34,7 +34,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	padding:0;
 	border:0;
 	outline:0;
-	font-weight:inherit;
+	font-weight:none;
 	font-style:inherit;
 	font-size:100%;
 	font-family: CenturyGothicRegular;
@@ -42,17 +42,25 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 h1.title-wdp{
-	font-size: 54.2pt;
+	/* font-size: 54.2pt; */
+	font-size: 5vw;
 	font-family: CenturyGothicBold;
+	margin-right: 1%;
+	
 }
 
 p.Founded-text{
-	font-size: 16.49pt;
+	/* font-size: 16.49pt ; */
+	font-size: 1.7vw;
 	width: 70%;
 	text-align: center;
+	font-family: CenturyGothicRegular;
+	margin-top: 36px;	
 }
+
 p.Plucky-text{
-	font-size: 16.49pt;
+	/* font-size: 16.49pt; */
+	font-size: 1.6vw;
 	width: 67%;
 	text-align: center;
 }
@@ -63,10 +71,25 @@ p > span {
 	padding-right: 1%;
 }
 
+#wrapper{
+	/* opacity: 0.5 !important; */
+	height: auto;
+	width: 100%;
+	
+}
 
+.test{
+	height: 1800px;
+	width: 100%;
+	background-image: url('../film.jpg');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute; 
+}
 
 p.contact-text{
-	font-size: 16.49pt;
+	font-size: 1.7vw;
 	width: 100%;
 	text-align: center;
 	display: flex;
@@ -109,7 +132,7 @@ aside, nav, article, figure {
 /*=== Main Styles ===*/
 /*===================*/
 body {
-	font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	font: 14px/1.6 CenturyGothicRegular; 
 	color:#333;
 	background:#fff;
 }
@@ -147,7 +170,7 @@ a:hover, a:active {
 
 .scoial-icon{
 	width: 100%;
-	height: 100px;
+	height: 117px;
 	/* background-color: lightcoral; */
 	position: relative;
 	margin-bottom: 15px;
@@ -156,6 +179,7 @@ a:hover, a:active {
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
+
 }
  
 
@@ -172,7 +196,7 @@ a:hover, a:active {
 	height: 25px;
 	background-image: url('../icons/icons_insta.png');
 	background-repeat: no-repeat;
-	margin-left: 60px;
+	margin-left: 55px;
 }
 .scoial-icon div.ay{
 	position: absolute;
@@ -180,7 +204,7 @@ a:hover, a:active {
 	height: 20px;
 	background-image: url('../icons/icons_youtube.png');
 	background-repeat: no-repeat;
-	margin-left: 120px;
+	margin-left: 104px;
 }
 .scoial-icon div.pause{
 	width: 20px;
@@ -204,18 +228,21 @@ div.con-btn{
 	z-index: 9999;
 	width:100%;
 	align-content: center;
-	margin-top: -42px;
+	margin-top: -74px;
 }
 
 div.con-btn a{
 	text-decoration: none !important;
 	border: none !important;
 	margin-left: 10px;
+	
 }
 .logo{
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 div.footer{
@@ -223,7 +250,7 @@ div.footer{
 	display: flex;
 	justify-content: center;
 	z-index: 9999;
-	position: absolute !important;
+	
 }
 
 
