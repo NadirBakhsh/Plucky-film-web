@@ -22,10 +22,10 @@
     <div class="logo"><div><img src="./icons/PluckyFilms_logo.jpg" width="340"/></div></div>
      <div class="slider-wrapper theme-default">
       <div id="slider" class="nivoSlider">
-        <img src="demo/images/img1.jpg"  data-transition="boxRainGrowReverse"   data-thumb="demo/images/PluckyFilms_1.jpg"  alt="" title="#write" />
-        <img src="demo/images/img2.jpg"  data-transition="boxRainGrowReverse" data-thumb="demo/images/PluckyFilms_2.jpg" alt="" title="#founded" />
-        <img src="demo/images/img3.jpg"  data-transition="boxRainGrowReverse"  data-thumb="demo/images/PluckyFilms_3.jpg" alt="" title="#Plucky" />
-        <img src="demo/images/img4.jpg"  data-transition="boxRainGrowReverse" data-transition="slideInLeft" data-thumb="demo/images/PluckyFilms_4.jpg" alt="" title="#info" /> </div>
+        <img src="demo/images/HD1.jpg"  data-transition="boxRainGrowReverse"   data-thumb="demo/images/PluckyFilms_1.jpg"  alt="" title="#write" />
+        <img src="demo/images/HD2.jpg"  data-transition="boxRainGrowReverse" data-thumb="demo/images/PluckyFilms_2.jpg" alt="" title="#founded" />
+        <img src="demo/images/HD3.jpg"  data-transition="boxRainGrowReverse"  data-thumb="demo/images/PluckyFilms_3.jpg" alt="" title="#Plucky" />
+        <img src="demo/images/HD4.jpg"  data-transition="boxRainGrowReverse" data-transition="slideInLeft" data-thumb="demo/images/PluckyFilms_4.jpg" alt="" title="#info" /> </div>
 
         <div id="write" class="nivo-html-caption">
           <h1 class='title-wdp animate__animated animate__zoomIn animate__delay-2s'>Write. Direct. Produce.</h1>
@@ -56,11 +56,11 @@
           </p>
           <div class="scoial-icon animate__animated animate__fadeIn animate__delay-3s">
             <div style="margin-left: -150px;">
-              <a href="https://twitter.com/_PluckyFilms_">
-                <div class="at"></div>
+              <a target="_blank" href="https://twitter.com/_PluckyFilms_">
+                <div target="_blank" class="at"></div>
               </a>
-              <a href="https://www.instagram.com/PluckyFilms/">
-                <div class="ai"></div>
+              <a target="_blank" href="https://www.instagram.com/PluckyFilms/">
+                <div target="_blank" class="ai"></div>
               </a>
               <a href="https://www.youtube.com/channel/UCLVwJQzSXxZYrCCD_f1-J2Q/about">
                 <div class="ay"></div>
@@ -75,16 +75,17 @@
       </div>
     </div>
   </div> 
-      <div class="footer"><footer>
-        <p>© 2015 - 2020 Plucky Films LLC. All rights reserved.</p>
-      </footer></div>
+  <div class="footer"><footer>
+    <p>© 2015 - 2020 Plucky Films LLC. All rights reserved.</p>
+  </footer></div>
+    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.nivo.slider.js"></script>
   <script type="text/javascript">
     $(window).load(function () {
       $('#slider').nivoSlider();
       // $('#slider').data('nivoslider').stop();
-
+      
       var $slider = $('#slider');
 
       $("#pause").click(function (e) {

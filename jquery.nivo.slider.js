@@ -623,7 +623,9 @@
             element.data('nivoslider', nivoslider);
         });
     };
-    
+      
+
+
     //Default settings
     $.fn.nivoSlider.defaults = {
         effect: 'random',
@@ -631,7 +633,7 @@
         boxCols: 8,
         boxRows: 4,
         animSpeed: 1800,
-        pauseTime: 5000,
+        pauseTime: 5000 ,
         startSlide: 0,
         directionNav: false,
         controlNav: false,
@@ -642,10 +644,10 @@
         nextText: 'Next',
         randomStart: false,
         beforeChange: function(){},
-        afterChange: function(){},
+        afterChange: function(){setDelay()},
         slideshowEnd: function(){},
         lastSlide: function(){},
-        afterLoad: function(){},
+        afterLoad: function(){setDelay()},
         
     };
 
