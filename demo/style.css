@@ -74,7 +74,7 @@ p > span {
 #wrapper{
 	/* opacity: 0.5 !important; */
 	height: auto;
-	width: 100%;
+	/* width: 100%; */
 	
 }
 
@@ -246,13 +246,14 @@ div.con-btn a{
 }
 
 div.footer{
-	width: 100%;
+	width: 95%;
 	display: flex;
 	justify-content: center;
-	z-index: 9999;
+	z-index: 4;
+	position: relative;
+	padding: 25px;
+
 	
 }
 
 
-.bar { padding-bottom: 38.1831%;
-	height: 0;}
