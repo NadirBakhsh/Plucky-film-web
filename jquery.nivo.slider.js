@@ -11,7 +11,9 @@
             running: false,
             paused: false,
             stop: false,
-            controlNavEl: false
+            controlNavEl: false,
+            
+            
         };
 
         // Get this slider
@@ -625,6 +627,9 @@
     };
       
 
+    
+
+    
 
     //Default settings
     $.fn.nivoSlider.defaults = {
@@ -632,10 +637,10 @@
         slices: 15,
         boxCols: 8,
         boxRows: 4,
-        animSpeed: 1800,
-        pauseTime: 5000 ,
+        animSpeed: 1800, //1800,
+        pauseTime: 5000,//5000 ,
         startSlide: 0,
-        directionNav: false,
+        directionNav: true,
         controlNav: false,
         controlNavThumbs: false,
         pauseOnHover: false,
@@ -644,14 +649,23 @@
         nextText: 'Next',
         randomStart: false,
         beforeChange: function(){},
-        afterChange: function(){setDelay()},
+        afterChange: function(){},
         slideshowEnd: function(){},
         lastSlide: function(){},
-        afterLoad: function(){setDelay()},
+        afterLoad: function(){},
         
     };
 
     $.fn._reverse = [].reverse;
+
+
+
+    
     
 })(jQuery);
+
+
+
+
+
 

@@ -28,7 +28,7 @@
         <img src="demo/images/HD4.jpg"  data-transition="boxRainGrowReverse" data-transition="slideInLeft" data-thumb="demo/images/PluckyFilms_4.jpg" alt="" title="#info" /> </div>
 
         <div id="write" class="nivo-html-caption">
-          <h1 class='title-wdp animate__animated animate__zoomIn animate__delay-2s'>Write. Direct. Produce.</h1>
+          <h1 class='title-wdp animate__animated animate__zoomIn animate__delay-1s animate__fast'>Write. Direct. Produce.</h1>
         </div>
 
         <div id="founded" class="nivo-html-caption">
@@ -47,15 +47,15 @@
 
       <div id="info" class="nivo-html-caption">
         <div class="info-container">
-          <p class="contact-text" style="margin-top: 100px;">
+          <p class="contact-text">
             <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast" >Plucky Films</span>
             <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast">450 Lex. Ave #2782</span>
             <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast">New York, NY 10017</span>
-            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast" style="margin-top: 20px;">212-498-9314</span>
-            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast" style="margin-top: 20px;">info@pluckyfilms.com</span>
+            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast" >212-498-9314</span>
+            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast" >info@pluckyfilms.com</span>
           </p>
           <div class="scoial-icon animate__animated animate__fadeIn animate__delay-3s">
-            <div style="margin-left: -150px;">
+            <div class="icon-div">
               <a target="_blank" href="https://twitter.com/_PluckyFilms_">
                 <div target="_blank" class="at"></div>
               </a>
@@ -84,8 +84,7 @@
   <script type="text/javascript">
     $(window).load(function () {
       $('#slider').nivoSlider();
-      // $('#slider').data('nivoslider').stop();
-      
+      $('#slider').data('nivoslider').stop();  
       var $slider = $('#slider');
 
       $("#pause").click(function (e) {
@@ -97,7 +96,21 @@
         e.preventDefault();
         $slider.data('nivoslider').start();
       });
+
+
+      // var currentSlide = $slider.data("nivo:vars").currentSlide;
+      // console.log(currentSlide)
+      // if(currentSlide === 0){
+      //   setTimeout(() => {
+      //     $slider.find('a.nivo-nextNav').click()
+      //   }, 3200);
+      // }
+
     });
+
+    
+  
+
   </script>
 
 </body>
