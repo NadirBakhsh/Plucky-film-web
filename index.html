@@ -19,24 +19,25 @@
   <!-- <div class="test"></div> -->
   <div class="pre-loader">
     <div class="sk-circle">
-        <div class="sk-circle1 sk-child"></div>
-        <div class="sk-circle2 sk-child"></div>
-        <div class="sk-circle3 sk-child"></div>
-        <div class="sk-circle4 sk-child"></div>
-        <div class="sk-circle5 sk-child"></div>
-        <div class="sk-circle6 sk-child"></div>
-        <div class="sk-circle7 sk-child"></div>
-        <div class="sk-circle8 sk-child"></div>
-        <div class="sk-circle9 sk-child"></div>
-        <div class="sk-circle10 sk-child"></div>
-        <div class="sk-circle11 sk-child"></div>
-        <div class="sk-circle12 sk-child"></div>
-      </div>
-</div>
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div>
   <div class="overlay-container"></div>
+
   <div id="wrapper">
     <div class="logo">
-      <div><img src="./icons/PluckyFilms_logo.jpg" width="340" /></div>
+      <div><img src="./icons/PluckyFilms_logo.jpg"  /></div>
     </div>
     <div class="slider-wrapper theme-default">
       <div id="slider" class="nivoSlider">
@@ -48,9 +49,9 @@
           alt="" title="#Plucky" />
         <img src="demo/images/HD4.jpg" data-transition="boxRainGrowReverse" data-transition="slideInLeft"
           data-thumb="demo/images/PluckyFilms_4.jpg" alt="" title="#info" /> </div>
-        
+
       <div id="write" class="nivo-html-caption">
-        <h1 class='title-wdp animate__animated animate__zoomIn animate__delay-1s animate__fast'>Write. Direct. Produce.
+        <h1  class='title-wdp animate__animated animate__delay-2s animate__zoomIn animate__fast'>Write. Direct. Produce.
         </h1>
       </div>
 
@@ -101,13 +102,19 @@
         <a href="#" id="play"><img src="./icons/icons_play.png" /></a>
       </div>
     </div>
+    <!-- <div class="mobile-text">
+      <div id="write" class="nivo-html-caption">
+        <h1 class='title-wdp animate__animated animate__delay-2s animate__zoomIn animate__fast'>Write. Direct. Produce.
+        </h1>
+      </div>
+    </div> -->
   </div>
   <div class="footer">
-    <footer>
+    <footer class="footer-text">
       <p>© 2015 - 2020 Plucky Films LLC. All rights reserved.</p>
     </footer>
   </div>
- 
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.nivo.slider.js"></script>
@@ -132,25 +139,25 @@
         e.preventDefault();
         $slider.find('a.nivo-prevNav').click()
       });
-      
-      
 
-      var timeArray = [200, 400, 500, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400,28000,3000, 3200,3400]
-      var heightArray = [95, 90, 85, 80, 75, 60, 55, 50, 45, 40, 35, 30, 25, 20,15,10,5]
+      var timeArray = [200, 400, 500, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400]
+      var heightArray = [75, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
 
       timeArray.map((time, index) => {
         setTimeout(() => {
-        var overlayheight = $('.overlay-container').height()
-        $('.overlay-container').css('height', `${heightArray[index]}vh`)
-        if(heightArray[index] === 5) {
-          $('.overlay-container').hide() 
-          $('.pre-loader').hide() 
-        }
-      }, time);
+          var overlayheight = $('.overlay-container').height()
+          $('.overlay-container').css('height', `${heightArray[index]}vh`)
+          if (heightArray[index] === 5) {
+            $('.overlay-container').hide()
+            $('.title-wdp').addClass('')
+
+          }
+        }, time);
       })
 
-
-  
+      setTimeout(() => {
+        $('.pre-loader').fadeOut()
+      }, 2000);
 
 
       var currentSlide = $slider.data("nivo:vars").currentSlide;
@@ -160,13 +167,7 @@
           $slider.find('a.nivo-nextNav').click()
         }, 3410);
       }
-
-
     });
-
-
-
-
 
   </script>
 
