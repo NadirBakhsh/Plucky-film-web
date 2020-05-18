@@ -12,47 +12,73 @@
   <link rel="stylesheet" href="demo/style.css" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+  <link rel="stylesheet" href="./loader/style.css">
 </head>
 
 <body>
   <!-- <div class="test"></div> -->
+  <div class="pre-loader">
+    <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+</div>
+  <div class="overlay-container"></div>
   <div id="wrapper">
-    <div class="logo"><div><img src="./icons/PluckyFilms_logo.jpg" width="340"/></div></div>
-     <div class="slider-wrapper theme-default">
+    <div class="logo">
+      <div><img src="./icons/PluckyFilms_logo.jpg" width="340" /></div>
+    </div>
+    <div class="slider-wrapper theme-default">
       <div id="slider" class="nivoSlider">
-        <img src="demo/images/HD1.jpg"  data-transition="boxRainGrowReverse"   data-thumb="demo/images/PluckyFilms_1.jpg"  alt="" title="#write" />
-        <img src="demo/images/HD2.jpg"  data-transition="boxRainGrowReverse" data-thumb="demo/images/PluckyFilms_2.jpg" alt="" title="#founded" />
-        <img src="demo/images/HD3.jpg"  data-transition="boxRainGrowReverse"  data-thumb="demo/images/PluckyFilms_3.jpg" alt="" title="#Plucky" />
-        <img src="demo/images/HD4.jpg"  data-transition="boxRainGrowReverse" data-transition="slideInLeft" data-thumb="demo/images/PluckyFilms_4.jpg" alt="" title="#info" /> </div>
+        <img src="demo/images/HD1.jpg" data-transition="boxRainGrowReverse" data-thumb="demo/images/PluckyFilms_1.jpg"
+          alt="" title="#write" />
+        <img src="demo/images/HD2.jpg" data-transition="boxRainGrowReverse" data-thumb="demo/images/PluckyFilms_2.jpg"
+          alt="" title="#founded" />
+        <img src="demo/images/HD3.jpg" data-transition="boxRainGrowReverse" data-thumb="demo/images/PluckyFilms_3.jpg"
+          alt="" title="#Plucky" />
+        <img src="demo/images/HD4.jpg" data-transition="boxRainGrowReverse" data-transition="slideInLeft"
+          data-thumb="demo/images/PluckyFilms_4.jpg" alt="" title="#info" /> </div>
+        
+      <div id="write" class="nivo-html-caption">
+        <h1 class='title-wdp animate__animated animate__zoomIn animate__delay-1s animate__fast'>Write. Direct. Produce.
+        </h1>
+      </div>
 
-        <div id="write" class="nivo-html-caption">
-          <h1 class='title-wdp animate__animated animate__zoomIn animate__delay-1s animate__fast'>Write. Direct. Produce.</h1>
-        </div>
+      <div id="founded" class="nivo-html-caption">
+        <p class="Founded-text animate__animated animate__fadeInUp animate__delay-2s">Founded in 2015, Plucky Films is a
+          New York based film and television production company that creates and
+          develops diverse and original content covering various genres in both the independent and studio space.</p>
+      </div>
 
-        <div id="founded" class="nivo-html-caption">
-          <p class="Founded-text animate__animated animate__fadeInUp animate__delay-2s">Founded in 2015, Plucky Films is a
-            New York based film and television production company that creates and
-            develops diverse and original content covering various genres in both the independent and studio space.</p>
-        </div>
-
-        <div id="Plucky" class="nivo-html-caption">
-          <p class="Plucky-text">
-            <span  class="animate__animated animate__fadeInTopLeft animate__delay-2s animate__slow">Plucky Films brings fresh, new innovative shows to homes and movie theaters across </span>
-            <span  class="animate__animated animate__fadeIn animate__delay-2s animate__slow">the globe; producing stories that evoke meaningful conversations covering vast</span>
-            <span  class="animate__animated animate__fadeInTopRight animate__delay-2s animate__slow">topics to encourage thoughtful discussion by audiences worldwide.</span>   
-          </p>
-        </div>
+      <div id="Plucky" class="nivo-html-caption">
+        <p class="Plucky-text">
+          <span class="animate__animated animate__fadeInTopLeft animate__delay-2s animate__slow">Plucky Films brings
+            fresh, new innovative shows to homes and movie theaters across </span>
+          <span class="animate__animated animate__fadeIn animate__delay-2s animate__slow">the globe; producing stories
+            that evoke meaningful conversations covering vast</span>
+          <span class="animate__animated animate__fadeInTopRight animate__delay-2s animate__slow">topics to encourage
+            thoughtful discussion by audiences worldwide.</span>
+        </p>
+      </div>
 
       <div id="info" class="nivo-html-caption">
         <div class="info-container">
           <p class="contact-text">
-            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast" >Plucky Films</span>
+            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast">Plucky Films</span>
             <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast">450 Lex. Ave #2782</span>
             <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast">New York, NY 10017</span>
-            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast" >212-498-9314</span>
-            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast" >info@pluckyfilms.com</span>
+            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast">212-498-9314</span>
+            <span class="animate__animated animate__fadeIn animate__delay-2s animate__fast">info@pluckyfilms.com</span>
           </p>
           <div class="scoial-icon animate__animated animate__fadeIn animate__delay-3s">
             <div class="icon-div">
@@ -60,9 +86,9 @@
                 <div target="_blank" class="at"></div>
               </a>
               <a target="_blank" href="https://www.instagram.com/PluckyFilms/">
-                <div target="_blank" class="ai"></div>
+                <div class="ai"></div>
               </a>
-              <a href="https://www.youtube.com/channel/UCLVwJQzSXxZYrCCD_f1-J2Q/about">
+              <a target="_blank" href="https://www.youtube.com/channel/UCLVwJQzSXxZYrCCD_f1-J2Q/about">
                 <div class="ay"></div>
               </a>
             </div>
@@ -70,21 +96,25 @@
         </div>
       </div>
       <div class="con-btn">
-        <a href="#" id="pause"><img src="./icons/icons_push.png"/></a>
-        <a href="#" id="play"><img src="./icons/icons_play.png"/></a>
+        <a href="#" id="Prev"><img src="./icons/icons_play.png" /></a>
+        <a href="#" id="pause"><img src="./icons/icons_push.png" /></a>
+        <a href="#" id="play"><img src="./icons/icons_play.png" /></a>
       </div>
     </div>
-  </div> 
-  <div class="footer"><footer>
-    <p>© 2015 - 2020 Plucky Films LLC. All rights reserved.</p>
-  </footer></div>
-    
+  </div>
+  <div class="footer">
+    <footer>
+      <p>© 2015 - 2020 Plucky Films LLC. All rights reserved.</p>
+    </footer>
+  </div>
+ 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.nivo.slider.js"></script>
   <script type="text/javascript">
     $(window).load(function () {
       $('#slider').nivoSlider();
-      $('#slider').data('nivoslider').stop();  
+      // $('#slider').data('nivoslider').stop();  
       var $slider = $('#slider');
 
       $("#pause").click(function (e) {
@@ -94,22 +124,49 @@
 
       $("#play").click(function (e) {
         e.preventDefault();
+        $slider.find('a.nivo-nextNav').click()
         $slider.data('nivoslider').start();
       });
 
+      $("#Prev").click(function (e) {
+        e.preventDefault();
+        $slider.find('a.nivo-prevNav').click()
+      });
+      
+      
 
-      // var currentSlide = $slider.data("nivo:vars").currentSlide;
-      // console.log(currentSlide)
-      // if(currentSlide === 0){
-      //   setTimeout(() => {
-      //     $slider.find('a.nivo-nextNav').click()
-      //   }, 3200);
-      // }
+      var timeArray = [200, 400, 500, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400,28000,3000, 3200,3400]
+      var heightArray = [95, 90, 85, 80, 75, 60, 55, 50, 45, 40, 35, 30, 25, 20,15,10,5]
+
+      timeArray.map((time, index) => {
+        setTimeout(() => {
+        var overlayheight = $('.overlay-container').height()
+        $('.overlay-container').css('height', `${heightArray[index]}vh`)
+        if(heightArray[index] === 5) {
+          $('.overlay-container').hide() 
+          $('.pre-loader').hide() 
+        }
+      }, time);
+      })
+
+
+  
+
+
+      var currentSlide = $slider.data("nivo:vars").currentSlide;
+      console.log(currentSlide)
+      if (currentSlide === 0) {
+        setTimeout(() => {
+          $slider.find('a.nivo-nextNav').click()
+        }, 3410);
+      }
+
 
     });
 
-    
-  
+
+
+
 
   </script>
 
