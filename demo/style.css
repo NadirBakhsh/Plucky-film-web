@@ -40,6 +40,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 
 
+
 h1.title-wdp{
 	/* font-size: 54.2pt; */
 	font-size: 5vw;
@@ -249,6 +250,10 @@ div.con-btn a{
 	width: 340px;
 }
 
+.scoial-icon div.at {
+    margin-left: 8px !important;
+}
+
 
 div.footer {
     width: 100%;
@@ -275,6 +280,10 @@ footer{
 	 margin-left: -150px;
 }
 
+#Prev img {
+    margin-top: -2px;
+}
+
 /*====================*/
 /*=== Responsiveness ===*/
 /*====================*/
@@ -290,7 +299,7 @@ span.animate__animated.animate__fadeIn.animate__delay-2s.animate__fast {
 
 
 #Prev img {
-	transform: rotate(180deg);
+	transform: rotate(180deg);	
 }
 
  .overlay-container{
@@ -326,7 +335,8 @@ span.animate__animated.animate__fadeIn.animate__delay-2s.animate__fast {
 
 	span.animate__animated.animate__fadeIn.animate__delay-2s.animate__fast {
 		margin-top: 10px;
-	}	
+	}
+		
 }
 
 
