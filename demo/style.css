@@ -6,6 +6,10 @@
 /*=== Reset Styles ===*/
 /*====================*/
 
+html{
+	scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: Century-Gothic;
     src: url('../demo/Century-Gothic.ttf');
@@ -33,9 +37,13 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline:0;
 	font-weight:none;
 	font-style:inherit;
-	font-size:100%;
+	/* font-size:100%; */
 	font-family: CenturyGothicRegular;
 	vertical-align:baseline;
+}
+
+a#Prev {
+    margin-top: -1px !important;
 }
 
 
@@ -61,7 +69,7 @@ p.Founded-text{
 p.Plucky-text{
 	/* font-size: 16.49pt; */
 	font-size: 1.6vw;
-	width: 67%;
+	width: 71%;
 	text-align: center;
 }
 
@@ -231,6 +239,7 @@ div.con-btn{
 	width:100%;
 	align-content: center;
 	margin-top: -74px;
+	justify-content: center;
 }
 
 div.con-btn a{
@@ -284,6 +293,181 @@ footer{
     margin-top: -2px;
 }
 
+
+
+/* ============ */
+/* Mobile  css */
+/* ============ */
+
+#desktop{
+	display: none ;
+}
+
+.mobile-container{
+	display: none;
+}
+
+#mobile{
+	width: 100%;	
+}
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: none;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: CenturyGothicRegular;
+    vertical-align: bottom !important;
+}
+
+#Prev img {
+    margin-top: 0px !important;
+}
+
+
+/* ============ */
+/* Mobile  css colse */
+/* ============ */
+
+
+.mobile-container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.img-1{
+	display: flex;
+	height: 150px;
+	background-image: url('./images/mobile/HD1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.img3{
+	display: flex;
+	max-height: 250px;
+	background-image: url('./images/mobile/HD3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.img-2{
+	display: flex;
+	height: 200px;
+	background-image: url('./images/mobile/HD2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img-2-4{
+	display: flex;
+	height: 200px;
+	background-image: url('./images/mobile/HD4.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1.title-wdp.mobile-text-1 {
+    width: 100%;
+    display: flex;
+	font-size: 2.4;
+	color: #fff;
+}
+
+p.mobile-text-2 {
+    text-align: center;
+    width: 92%;
+	color: #fff;
+	font-size: 4.5vw;
+}
+
+p.Plucky-text.mobile-text-3 {
+    font-size: 3.5vw;
+    width: 100%;
+    margin-left: 0px;
+    color: #fff;
+}
+
+p.Plucky-text.mobile-text-3 {
+    font-size: 4vw;
+    width: 100%;
+    margin-left: 0px;
+    color: #fff;
+    text-align: -webkit-center;
+}
+
+.mobile-scoial-icon {
+    width: 100%;
+    height: 33px;
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.mobile-contact {
+    margin-left: 0px;
+    font-size: 5.5vw;
+    line-height: 28px;
+    color: #fff;
+}
+
+.mobile-contact {
+    margin-left: 0px;
+    font-size: 5.5vw;
+    line-height: 32px;
+    width: 67%;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+  ;
+}
+
+.footer-mobile {
+    font-size: 4vw;
+    text-align: center;
+    padding: 8px;
+}
+
+@media(max-width: 600px){
+	.mobile-contact {
+		font-size: 4.5vw;
+	}
+	p.Plucky-text.mobile-text-3 {
+		font-size: 3vw;
+	}
+}
+
+@media(min-width: 360px){
+
+	p.Plucky-text.mobile-text-3 {
+		font-size: 4vw;
+	}
+}
+
+
+
 /*====================*/
 /*=== Responsiveness ===*/
 /*====================*/
@@ -323,20 +507,83 @@ span.animate__animated.animate__fadeIn.animate__delay-2s.animate__fast {
 	
 } */
 
+.mobile-contact span.cont-text-span{
+	background: none !important;
+	display: block;
+	line-height: 24px;
+}
 
-@media (max-width:960px) {
-	.icon-div{
-		margin-left: -145px;
-		margin-top: 19px;
+
+.mobile-contact{
+	margin-top: 20px ;
+}
+
+.btn-down{
+	width: 35px;
+	height: 35px;
+	background-color: #337AB7;
+	position: fixed;
+	z-index: 1000;
+	bottom: 20px;
+	right: 5px;
+}
+
+
+.bi.bi-arrow-up{
+	margin-left: 3px;
+	margin-top: 2px;
+}
+
+.bi.bi-down{
+	margin-left: 3px;
+	margin-top: 2px;
+}
+
+
+@media (max-width:440px) {
+	footer.footer-text {
+		display: none !important;
+	}
+}
+
+@media (max-width:640px) {
+	.logo {
+		width: 100%;
+		height: 122px !important;
+	}
+	.logo img {
+		width: 300px;
 	}
 	p.contact-text {
-		margin-top: 50px;
+		margin-top: -5px !important;
+		margin-left: 10px !important;
+		font-size: 2.5vw !important;
+		line-height: 22px !important;
 	}
 
-	span.animate__animated.animate__fadeIn.animate__delay-2s.animate__fast {
-		margin-top: 10px;
+	/* .icon-div {
+		margin-left: -125px !important;
+		margin-top: 13px !important;
+	} */
+
+	footer {
+		font-size: 2.3vw !important;
 	}
-		
+
+}
+
+@media (min-width:600px) {
+	#desktop{
+		display: block ;
+	}
+
+}
+
+@media (min-width:600px) {
+	.mobile-container{
+		display: none;
+	}
+	
 }
 
 
@@ -376,6 +623,7 @@ span.animate__animated.animate__fadeIn.animate__delay-2s.animate__fast {
 		}
 	
 }
+
 
 
 @media (max-width:440px) {
@@ -466,6 +714,62 @@ footer{
     margin-top: -172px !important;
 }
 
+}
+
+
+@media (max-width: 731px){
+footer {
+    font-size: 2.3vw;
+}
+
+}
+
+
+@media (max-width: 823px){
+	p.contact-text {
+		margin-top: 15px;
+	}
+	p.contact-text {
+		font-size: 2.4vw;
+	}
+	.logo {
+		width: 100%;
+		height: 122px !important;
+	}
+	.logo img {
+		width: 300px;
+	}
+	p.contact-text {
+		margin-top: -5px !important;
+		margin-left: 10px !important;
+		font-size: 2.5vw !important;
+		line-height: 22px !important;
+	}
+
+	/* .icon-div {
+		margin-left: -125px !important;
+		margin-top: 13px !important;
+	} */
+
+	footer {
+		font-size: 2vw !important;
+	}
+}
+
+@media (min-width: 360px){
+p.Plucky-text.mobile-text-3 {
+    font-size: 2.3vw;
+}
+p.mobile-text-2 {
+    font-size: 2.3vw;
+}
+.mobile-contact {
+    font-size: 2.3vw;
+}
+
+.footer-mobile {
+	font-size: 2.3vw;}
+	
 }
 
 

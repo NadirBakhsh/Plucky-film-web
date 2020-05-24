@@ -6,6 +6,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="./icons/Fav232.png" />
   <title>Plucky Films</title>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./Bootstrap/bootstrap.css" type="text/css" />
   <link rel="stylesheet" href="themes/default/default.css" type="text/css" />
   <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
   <link rel="stylesheet" href="demo/style.css" type="text/css" />
@@ -36,9 +37,9 @@
 
   <div id="wrapper">
     <div class="logo">
-      <div><img src="./icons/PluckyFilms_logo.jpg"  /></div>
+      <div><img class="responsive" src="./icons/PluckyFilms_logo.jpg"  /></div>
     </div>
-    <div class="slider-wrapper theme-default">
+    <div id="desktop" class="slider-wrapper theme-default">
       <div id="slider" class="nivoSlider" >
         <img class="js-lazy-image" src="demo/images/HD1.jpg" data-transition="boxRainGrowReverse" data-thumb="demo/images/PluckyFilms_1.jpg"
           alt="" title="#write" />
@@ -101,12 +102,72 @@
         <a href="#" id="play"><img src="./icons/icons_play.png" /></a>
       </div>
     </div>
-    <!-- <div class="mobile-text">
-      <div id="write" class="nivo-html-caption">
-        <h1 class='title-wdp animate__animated animate__delay-2s animate__zoomIn animate__fast'>Write. Direct. Produce.
-        </h1>
+
+    <div class="mobile-container">
+      <a id="toggle-button-down" href="#down" class="btn-down">
+        <svg id='down-arrow' class="bi bi-down" width="2em" height="2em" viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4.646 9.646a.5.5 0 0 1 .708 0L8 12.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
+          <path fill-rule="evenodd" d="M8 2.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+      </a>
+        <div class="img-1">
+          <div >
+            <h1  class='title-wdp mobile-text-1'>
+              Write. Direct. Produce.
+            </h1>
+          </div>
+    
+        </div>
+        <div class="img-2">
+         
+            <p class="mobile-text-2">Founded in 2015, Plucky Films is a
+              New York based film and television production company that creates and
+              develops diverse and original content covering various genres in both the independent and studio space.</p>
+              
+        </div>
+        <div class="img-1 img3">
+          <div >
+            <p class="Plucky-text mobile-text-3">
+              Plucky Films brings
+                fresh, new innovative shows to homes and movie theaters across 
+              the globe; producing stories
+                that evoke meaningful conversations covering vast
+             topics to encourage
+                thoughtful discussion by audiences worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="img-2-4">
+          <div class="info-container" id='down'>
+            <p class="mobile-contact">
+              <span class="cont-text-span" >Plucky Films</span>
+              <span class="cont-text-span">450 Lex. Ave #2782</span>
+              <span class="cont-text-span">New York, NY 10017</span>
+              <span class="cont-text-span">212-498-9314</span>
+              <span class="cont-text-span">info@pluckyfilms.com</span>
+            </p>
+            <div class="scoial-icon mobile-scoial-icon">
+              <div class="icon-div">
+                <a target="_blank" href="https://twitter.com/_PluckyFilms_">
+                  <div target="_blank" class="at"></div>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/PluckyFilms/">
+                  <div class="ai"></div>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCLVwJQzSXxZYrCCD_f1-J2Q/about">
+                  <div class="ay"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mobile">
+            <p>© 2015 - 2020 Plucky Films LLC. All rights reserved.</p>
+        </div>
       </div>
-    </div> -->
+    </div>
+  
+  
   </div>
   <div class="footer">
     <footer class="footer-text">
@@ -114,14 +175,19 @@
     </footer>
   </div>
 
+  <script type="text/javascript" src="./Bootstrap/bootstrapjquery.js"></script>
+  <script type="text/javascript" src="./Bootstrap/poper.js"></script>
+  <script type="text/javascript" src="./Bootstrap/bootstrapmin.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
   <script src="./lazyLoader.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.nivo.slider.js"></script>
   <script type="text/javascript">
-    
+
+
 
     $(document).ready(function () {
+      console.log(screen.width)
       $('#slider').nivoSlider();
       // $('#slider').data('nivoslider').stop();  
       var $slider = $('#slider');
